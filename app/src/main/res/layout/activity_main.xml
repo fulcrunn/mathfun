@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgnd_1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Título do App -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Matemática Divertida"
+        android:textColor="#1565C0"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="serif"
+        android:text="Escolha um jogo!"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Botão Jogo de Contagem -->
+    <Button
+        android:id="@+id/btnContagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:padding="16dp"
+        android:text="🔢 Contagem"
+        android:textSize="20sp" />
+
+    <!-- Botão Aritmética Básica -->
+    <Button
+        android:id="@+id/btnAritmetica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF9800"
+        android:padding="16dp"
+        android:text="➕ Aritmética Básica"
+        android:textSize="20sp" />
+
+    <!-- Botão Maior Número -->
+    <Button
+        android:id="@+id/btnMaiorNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:padding="16dp"
+        android:text="🏆 Maior Número"
+        android:textSize="20sp" />
+
+</LinearLayout>
