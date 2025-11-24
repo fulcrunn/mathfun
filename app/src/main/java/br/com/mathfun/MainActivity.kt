@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import br.com.mathfun.contagem.ContagemActivity
+import br.com.mathfun.aritmetica.AritmeticaActivity
 
 class MainActivity : AppCompatActivity() { // Sua tela herda de AppCompatActivity (tela básica do Android)
     // lateinit indica que a inicialização é após o oncreate
@@ -35,7 +36,8 @@ class MainActivity : AppCompatActivity() { // Sua tela herda de AppCompatActivit
         }
 
         btnAritmetica.setOnClickListener {
-            // TODO: Implementar depois
+            val intent = Intent(this, AritmeticaActivity::class.java)
+            startActivity(intent)
         }
 
         btnMaiorNumero.setOnClickListener {
