@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import br.com.mathfun.R
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -24,6 +25,8 @@ class ContagemActivity : AppCompatActivity() {
     private lateinit var btnOpcao1: Button
     private lateinit var btnOpcao2: Button
     private lateinit var btnOpcao3: Button
+
+    private lateinit var btnVoltar: ImageButton
 
     // Imagens
     private val todasImagens = listOf(
@@ -60,6 +63,7 @@ class ContagemActivity : AppCompatActivity() {
         btnOpcao1 = findViewById(R.id.btnOpcao1)
         btnOpcao2 = findViewById(R.id.btnOpcao2)
         btnOpcao3 = findViewById(R.id.btnOpcao3)
+        btnVoltar = findViewById(R.id.btnVoltarContagem)
 
         // Embaralhar e pegar 5 perguntas
         perguntas = todasImagens.shuffled().take(5)
@@ -71,6 +75,10 @@ class ContagemActivity : AppCompatActivity() {
         btnOpcao1.setOnClickListener { verificarResposta(btnOpcao1.text.toString().toInt()) }
         btnOpcao2.setOnClickListener { verificarResposta(btnOpcao2.text.toString().toInt()) }
         btnOpcao3.setOnClickListener { verificarResposta(btnOpcao3.text.toString().toInt()) }
+
+        btnVoltar.setOnClickListener {
+            finish() // Fecha a activity atual e volta para a anterior
+        }
     }// end onCreate
 
     private fun mostrarPergunta(){

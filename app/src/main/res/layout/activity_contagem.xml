@@ -8,6 +8,18 @@
     tools:context=".contagem.ContagemActivity"
     android:padding="16dp">
 
+    <!-- Botão Voltar -->
+    <ImageButton
+        android:id="@+id/btnVoltarContagem"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="?attr/homeAsUpIndicator"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Voltar ao menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#F57C00" />
+
     <!-- Indicador de progresso: "Pergunta 1 de 5" -->
     <TextView
         android:id="@+id/tvProgresso"

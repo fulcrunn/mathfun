@@ -8,6 +8,17 @@
     android:background="#FFF3E0"
     android:padding="16dp">
 
+    <ImageButton
+        android:id="@+id/btnVoltarAritmetica"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="?attr/homeAsUpIndicator"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Voltar ao menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#E65100" />
+
     <TextView
         android:id="@+id/tvProgressoAritmetica"
         android:layout_width="wrap_content"
