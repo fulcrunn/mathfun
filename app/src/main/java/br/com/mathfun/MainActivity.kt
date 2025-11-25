@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import br.com.mathfun.contagem.ContagemActivity
 import br.com.mathfun.aritmetica.AritmeticaActivity
+import br.com.mathfun.maiorNumero.MaiorNumeroActivity
 
 class MainActivity : AppCompatActivity() { // Sua tela herda de AppCompatActivity (tela básica do Android)
     // lateinit indica que a inicialização é após o oncreate
@@ -41,7 +42,8 @@ class MainActivity : AppCompatActivity() { // Sua tela herda de AppCompatActivit
         }
 
         btnMaiorNumero.setOnClickListener {
-            // TODO: Implementar depois
+            val intent = Intent(this, MaiorNumeroActivity::class.java)
+            startActivity(intent)
         }
     } // end onCreate
 }

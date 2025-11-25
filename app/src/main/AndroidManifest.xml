@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MathFun">
         <activity
+            android:name=".maiorNumero.MaiorNumeroActivity"
+            android:exported="false" />
+        <activity
             android:name=".aritmetica.AritmeticaActivity"
             android:exported="false" />
         <activity
